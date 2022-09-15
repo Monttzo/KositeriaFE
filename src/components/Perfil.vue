@@ -209,7 +209,6 @@ export default {
                         icon: "success",
                     })
                     .then(() => {
-                        console.log('entra aca');
                         window.location.reload();
                     });
                 })    

@@ -453,7 +453,6 @@ export default {
                     axios.put(`https://kositeria-be.herokuapp.com/updateCaja/${id}/`,Data,{headers: {}})
                         .then(async (result) => {
                             this.loadCajas()
-                            console.log(result);
                             swal('Modificar Caja', 'Se ha modificado la caja correctamente', 'success').then(()=>{this.cerrarModalCaja()})
                         })    
                         .catch((e) => {
